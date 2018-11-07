@@ -10,6 +10,10 @@ var catalogRouter = require('./routes/catalog');  //Import routes for "catalog" 
 
 var app = express();
 
+// View engine setup.
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
